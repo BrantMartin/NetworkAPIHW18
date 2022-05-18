@@ -12,10 +12,4 @@ router.route('/').get(getUsers).post(createUser);
 
 router.route('/:userId').get(getSingleUser).delete(deleteUser);
 
-
-router.route('/:thoughtId/reactions').post(addReaction);
-
-
-router.route('/:thoughtId/reactions/:reactionId').delete(removeReaction);
-
 module.exports = router;
